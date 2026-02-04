@@ -39,15 +39,9 @@ cd welinggs
    - Option 1: Open `landing.html` or `welinggs home.html` in your browser
    - Option 2: Use a local server:
      ```bash
-     # Using Python
-     python -m http.server 8000
-     
      # Using Node.js (http-server)
      npx http-server
      
-     # Using PHP
-     php -S localhost:8000
-     ```
 
 3. Navigate to `http://localhost:8000` in your browser
 
@@ -134,3 +128,4 @@ Your wrx414
 - Food images sourced from various culinary websites
 - Fonts provided by Google Fonts
 - Icons from Heroicons
+
