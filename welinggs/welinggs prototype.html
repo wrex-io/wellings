@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welinggs</title>
+  <link rel="stylesheet" href="WELLINGS PROTOTYPE.css">
+  <link rel="website icon" type="png" href="images/welgg.png">
+</head>
+<body>
+  <div class="head">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <label class="headtitle">MAINS</label>
+      </button>
+      <div class="dropdown-content">
+        <a href="welinggstarters.html">STARTERS</a>
+        <a href="platters.html">PLATTERS</a>
+        <a href="drink_tabs.html">DRINKS</a>
+      </div>
+    </div>
+    <div class="chrtt">
+      <svg class="cart-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+      </svg>
+      <span>0</span> <!-- Cart item count -->
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Tile 1: Falafel Wrap -->
+    <div class="tile" id="tile1">
+      <img src="desert/falafel_wrap_thecozyapron_02-13-17_1.jpg" alt="Falafel Wrap">
+      <h3>Falafel Wrap</h3>
+      <p>GHc 25.00<span class="info" data-tooltip="Falafel, pita bread, hummus, etc.">ℹ</span></p>
+      <div class="order-controls" data-id="1" data-name="Falafel Wrap" data-price="25.00" data-image="desert/falafel_wrap_thecozyapron_02-13-17_1.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 2: Kelewele -->
+    <div class="tile" id="tile2">
+      <img src="desert/Kelewele-72.jpg" alt="Kelewele">
+      <h3>Kelewele</h3>
+      <p>GHc 2.00<span class="info" data-tooltip="Ripe plantain, ginger, etc.">ℹ</span></p>
+      <div class="order-controls" data-id="2" data-name="Kelewele" data-price="2.00" data-image="desert/Kelewele-72.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 3: Samosa -->
+    <div class="tile" id="tile3">
+      <img src="desert/samosa-recipe.jpg" alt="Samosa">
+      <h3>Samosa</h3>
+      <p>GHc 30.00<span class="info" data-tooltip="Potatoes, peas, spices.">ℹ</span></p>
+      <div class="order-controls" data-id="3" data-name="Samosa" data-price="30.00" data-image="desert/samosa-recipe.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 4: Yam Balls -->
+    <div class="tile" id="tile4">
+      <img src="desert/yam balls.jpeg" alt="Yam Balls">
+      <h3>Yam Balls</h3>
+      <p>GHc 27.00<span class="info" data-tooltip="Yam, egg, pepper, onion.">ℹ</span></p>
+      <div class="order-controls" data-id="4" data-name="Yam Balls" data-price="27.00" data-image="desert/yam balls.jpeg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 5: Kofi Brokeman -->
+    <div class="tile" id="tile5">
+      <img src="desert/kofi brokeeman.jpg" alt="Kofi Brokeman">
+      <h3>Kofi Brokeman</h3>
+      <p>GHc 15.00<span class="info" data-tooltip="Plantain, groundnuts.">ℹ</span></p>
+      <div class="order-controls" data-id="5" data-name="Kofi Brokeman" data-price="15.00" data-image="desert/kofi brokeeman.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 6: Bofrot -->
+    <div class="tile" id="tile6">
+      <img src="desert/bofrot.jpg" alt="Bofrot">
+      <h3>Bofrot</h3>
+      <p>GHc 20.00<span class="info" data-tooltip="Flour, sugar, yeast, vanilla.">ℹ</span></p>
+      <div class="order-controls" data-id="6" data-name="Bofrot" data-price="20.00" data-image="desert/bofrot.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 7: Kebab -->
+    <div class="tile" id="tile7">
+      <img src="desert/suya.jpg" alt="Kebab">
+      <h3>Kebab</h3>
+      <p>GHc 25.00<span class="info" data-tooltip="Beef/chicken on sticks.">ℹ</span></p>
+      <div class="order-controls" data-id="7" data-name="Kebab" data-price="25.00" data-image="desert/suya.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 8: Tater Tots -->
+    <div class="tile" id="tile8">
+      <img src="desert\tater tot.jpg" alt="Tater Tots">
+      <h3>Tater Tots</h3>
+      <p>GHc 30.00<span class="info" data-tooltip="Potatoes, salt, pepper.">ℹ</span></p>
+      <div class="order-controls" data-id="8" data-name="Tater Tots" data-price="30.00" data-image="desert/tater tot.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Cart Tab -->
+  <div class="cart-tab">
+    <h1>FOOD CART</h1>
+    <div class="listcart"></div>
+    <div class="btn">
+      <button class="close">Close</button>
+      <button class="checkout">Check Out</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const iconCart = document.querySelector('.chrtt');
+  const closeCart = document.querySelector('.cart-tab .close');
+  const listCart = document.querySelector('.listcart');
+  const cartCount = document.querySelector('.chrtt span');
+
+  let cart = [];
+
+  // Open/close cart
+  iconCart.addEventListener('click', () => {
+    document.body.classList.toggle('activeTabCart');
+  });
+  closeCart.addEventListener('click', () => {
+    document.body.classList.remove('activeTabCart');
+  });
+
+  // Function to attach event listeners to "Add Order" buttons
+  const attachAddOrderListeners = () => {
+    document.querySelectorAll('.js-addorder').forEach(button => {
+      button.addEventListener('click', () => {
+        const orderControls = button.parentElement;
+        const id = orderControls.dataset.id;
+        const name = orderControls.dataset.name;
+        const price = parseFloat(orderControls.dataset.price);
+        const image = orderControls.dataset.image;
+
+        // Check if item already exists in cart
+        const itemIndex = cart.findIndex(item => item.id === id);
+        if (itemIndex === -1) {
+          // Add new item to cart
+          cart.push({ id, name, price, image, quantity: 1 });
+        } else {
+          // Increase quantity if item already exists
+          cart[itemIndex].quantity += 1;
+        }
+
+        // Update cart UI
+        updateCartUI();
+        updateButtonUI(orderControls);
+      });
+    });
+  };
+
+  // Attach event listeners to initial "Add Order" buttons
+  attachAddOrderListeners();
+
+  // Update cart UI
+  const updateCartUI = () => {
+    listCart.innerHTML = '';
+    let totalItems = 0;
+
+    cart.forEach(item => {
+      const cartItem = document.createElement('div');
+      cartItem.classList.add('cart-item');
+      cartItem.innerHTML = `
+        <div class="cart-item-image">
+          <img src="${item.image}" alt="${item.name}">
+        </div>
+        <div class="cart-item-details">
+          <h3>${item.name}</h3>
+          <p>GHc ${item.price.toFixed(2)}</p>
+        </div>
+        <div class="cart-item-quantity">
+          <button class="quantity-btn minus" data-id="${item.id}">-1</button>
+          <span>${item.quantity}</span>
+          <button class="quantity-btn plus" data-id="${item.id}">+1</button>
+        </div>
+      `;
+      listCart.appendChild(cartItem);
+      totalItems += item.quantity;
+    });
+
+    // Update cart count
+    cartCount.textContent = totalItems;
+  };
+
+  // Update button UI
+  const updateButtonUI = (orderControls) => {
+    orderControls.innerHTML = `
+      <div class="addmore-container">
+        <div class="addmore">
+          <button class="add-more" data-id="${orderControls.dataset.id}" data-amount="1">+1</button>
+          <button class="add-more" data-id="${orderControls.dataset.id}" data-amount="2">+2</button>
+        </div>
+      </div>`;
+
+    // Handle "+1" and "+2" buttons using event delegation
+    orderControls.addEventListener('click', (e) => {
+      if (e.target.classList.contains('add-more')) {
+        const id = e.target.dataset.id;
+        const amount = parseInt(e.target.dataset.amount);
+        const itemIndex = cart.findIndex(item => item.id === id);
+        if (itemIndex !== -1) {
+          cart[itemIndex].quantity += amount;
+          updateCartUI();
+        }
+      }
+    });
+  };
+
+  // Handle quantity changes in cart using event delegation
+  listCart.addEventListener('click', (e) => {
+    if (e.target.classList.contains('minus')) {
+      const id = e.target.dataset.id;
+      const itemIndex = cart.findIndex(item => item.id === id);
+      if (itemIndex !== -1) {
+        if (cart[itemIndex].quantity > 1) {
+          cart[itemIndex].quantity -= 1;
+        } else {
+          // Remove item if quantity is 1
+          cart.splice(itemIndex, 1);
+          // Revert to "Add Order" button
+          const orderControls = document.querySelector(`.order-controls[data-id="${id}"]`);
+          if (orderControls) {
+            orderControls.innerHTML = `
+              <button class="add-order js-addorder" data-id="${id}" data-name="${orderControls.dataset.name}" data-price="${orderControls.dataset.price}" data-image="${orderControls.dataset.image}">Add Order</button>`;
+            // Reattach event listener to the new "Add Order" button
+            attachAddOrderListeners();
+          }
+        }
+        updateCartUI();
+      }
+    } else if (e.target.classList.contains('plus')) {
+      const id = e.target.dataset.id;
+      const itemIndex = cart.findIndex(item => item.id === id);
+      if (itemIndex !== -1) {
+        cart[itemIndex].quantity += 1;
+        updateCartUI();
+      }
+    }
+  });
+
+  // Checkout functionality
+  document.querySelector('.checkout').addEventListener('click', () => {
+    alert('Checkout functionality not implemented yet.');
+    // Add your checkout logic here
+  });
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks Menu</title>
+  <link rel="stylesheet" href="WELLINGS PROTOTYPE.css">
+  <link rel="icon" type="image/png" href="welinggs bg removed.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="head">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <label class="headtitle">DRINKS</label>
+      </button>
+      <div class="dropdown-content">
+        <a href="welinggstarters.html">STARTERS</a>
+        <a href="platters.html">PLATTERS</a>
+        <a href="mainsw.html">MAINS</a>
+      </div>
+    </div>
+    <div class="chrtt">
+      <svg class="cart-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+      </svg>
+      <span>0</span>
+    </div>
+  </div>
+
+  <!-- Tab Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li class="nav-link active" data-tab="alcoholic">Alcoholic</li>
+      <li class="nav-link" data-tab="non-alcoholic">Non-Alcoholic</li>
+      <li class="nav-link" data-tab="water">Water</li>
+    </ul>
+  </nav>
+
+  <!-- Tab Content -->
+  <div class="content">
+    <!-- Alcoholic Drinks -->
+    <div id="alcoholic" class="tab-content active">
+      <div class="container">
+        <!-- Blackberry Vodka -->
+        <div class="tile">
+          <img src="drinks/alcoholic/blackberry-mint-vodka-scaled.jpg" alt="Blackberry Vodka">
+          <h3>Blackberry Vodka</h3>
+          <p>GHc 32.00 <span class="info" data-tooltip="Vodka, blackberry puree, mint leaves, lime juice, simple syrup">ℹ</span></p>
+          <div class="order-controls" data-id="alc1" data-name="Blackberry Vodka" data-price="32.00" data-image="drinks/alcoholic/blackberry-mint-vodka-scaled.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+        
+        <!-- Carnberry Vodka -->
+        <div class="tile">
+          <img src="drinks/alcoholic/carnberry coktail.jpeg" alt="Carnberry Vodka">
+          <h3>Carnberry Vodka</h3>
+          <p>GHc 25.00 <span class="info" data-tooltip="Vodka, cranberry juice, lime juice, simple syrup">ℹ</span></p>
+          <div class="order-controls" data-id="alc2" data-name="Carnberry Vodka" data-price="25.00" data-image="drinks/alcoholic/carnberry coktail.jpeg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Long Mint -->
+        <div class="tile">
+          <img src="drinks/alcoholic/long mint.png" alt="Long Mint">
+          <h3>Long Mint</h3>
+          <p>GHc 23.00 <span class="info" data-tooltip="Mint leaves, vodka, lime juice, simple syrup, club soda">ℹ</span></p>
+          <div class="order-controls" data-id="alc3" data-name="Long Mint" data-price="23.00" data-image="drinks/alcoholic/long mint.png">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Strawberry Mojito -->
+        <div class="tile">
+          <img src="drinks/alcoholic/Cold-Strawberry-Mojito-683x1024.jpg" alt="Strawberry Mojito">
+          <h3>Strawberry Mojito</h3>
+          <p>GHc 30.00 <span class="info" data-tooltip="Rum, strawberries, mint leaves, lime juice, sugar, club soda">ℹ</span></p>
+          <div class="order-controls" data-id="alc4" data-name="Strawberry Mojito" data-price="30.00" data-image="drinks/alcoholic/Cold-Strawberry-Mojito-683x1024.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Peach-Rum -->
+        <div class="tile">
+          <img src="drinks/alcoholic/Article-Best-Cocktail-Recipes-for-Day-Drinking-Spritz-Low-ABV-Recipes.webp" alt="Peach-Rum">
+          <h3>Peach-Rum</h3>
+          <p>GHc 24.00 <span class="info" data-tooltip="Rum, peach schnapps, orange juice, grenadine">ℹ</span></p>
+          <div class="order-controls" data-id="alc5" data-name="Peach-Rum" data-price="24.00" data-image="drinks/alcoholic/Article-Best-Cocktail-Recipes-for-Day-Drinking-Spritz-Low-ABV-Recipes.webp">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Blue Ivy -->
+        <div class="tile">
+          <img src="drinks/alcoholic/Electric-Shark-Cocktail-Recipe-4.jpg" alt="Blue Ivy">
+          <h3>Blue Ivy</h3>
+          <p>GHc 25.00 <span class="info" data-tooltip="Blue Curacao, vodka, lemonade, blue raspberry syrup">ℹ</span></p>
+          <div class="order-controls" data-id="alc6" data-name="Blue Ivy" data-price="25.00" data-image="drinks/alcoholic/Electric-Shark-Cocktail-Recipe-4.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Purple Rain -->
+        <div class="tile">
+          <img src="drinks/alcoholic/Purple-rain-90edf70.jpg" alt="Purple Rain">
+          <h3>Purple Rain</h3>
+          <p>GHc 30.00 <span class="info" data-tooltip="Vodka, blue curacao, cranberry juice, sweet and sour mix">ℹ</span></p>
+          <div class="order-controls" data-id="alc7" data-name="Purple Rain" data-price="30.00" data-image="drinks/alcoholic/Purple-rain-90edf70.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Casa Migos Lick -->
+        <div class="tile">
+          <img src="drinks/alcoholic/casamigas-spicy-cucumber-margarita-hero.jpg" alt="Casa Migos Lick">
+          <h3>Casa Migos Lick</h3>
+          <p>GHc 36.00 <span class="info" data-tooltip="Tequila, lime juice, cucumber, jalapeno, agave syrup">ℹ</span></p>
+          <div class="order-controls" data-id="alc8" data-name="Casa Migos Lick" data-price="36.00" data-image="drinks/alcoholic/casamigas-spicy-cucumber-margarita-hero.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Non-Alcoholic Drinks -->
+    <div id="non-alcoholic" class="tab-content">
+      <div class="container">
+        <!-- Asana -->
+        <div class="tile">
+          <img src="drinks/non/asaana-drink-1.jpg" alt="Asana">
+          <h3>Asana</h3>
+          <p>GHc 15.00 <span class="info" data-tooltip="Hibiscus, ginger, sugar, water">ℹ</span></p>
+          <div class="order-controls" data-id="non1" data-name="Asana" data-price="15.00" data-image="drinks/non/asaana-drink-1.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+        
+        <!-- Brukina -->
+        <div class="tile">
+          <img src="drinks/non/brukina.jpg" alt="Brukina">
+          <h3>Brukina</h3>
+          <p>GHc 20.00 <span class="info" data-tooltip="Corn, milk, sugar, water">ℹ</span></p>
+          <div class="order-controls" data-id="non2" data-name="Brukina" data-price="20.00" data-image="drinks/non/brukina.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Oco Milkshake -->
+        <div class="tile">
+          <img src="drinks/non/GSnlzQoXwAAt2Bu.jpeg" alt="Oco Milkshake">
+          <h3>Oco Milkshake</h3>
+          <p>GHc 23.00 <span class="info" data-tooltip="Oco (a type of nut), milk, sugar, vanilla">ℹ</span></p>
+          <div class="order-controls" data-id="non3" data-name="Oco Milkshake" data-price="23.00" data-image="drinks/non/GSnlzQoXwAAt2Bu.jpeg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Passion Fruit Smoothie -->
+        <div class="tile">
+          <img src="drinks/non/passionfruit-horchata_Square-1300x1300.webp" alt="Passion Fruit Smoothie">
+          <h3>Passion Fruit Smoothie</h3>
+          <p>GHc 80.00 <span class="info" data-tooltip="Passion fruit, yogurt, honey, ice">ℹ</span></p>
+          <div class="order-controls" data-id="non4" data-name="Passion Fruit Smoothie" data-price="80.00" data-image="drinks/non/passionfruit-horchata_Square-1300x1300.webp">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Sobolo -->
+        <div class="tile">
+          <img src="drinks/non/sobolo-pcfudien-jpg.jpeg" alt="Sobolo">
+          <h3>Sobolo</h3>
+          <p>GHc 15.00 <span class="info" data-tooltip="Hibiscus leaves, ginger, sugar, water">ℹ</span></p>
+          <div class="order-controls" data-id="non5" data-name="Sobolo" data-price="15.00" data-image="drinks/non/sobolo-pcfudien-jpg.jpeg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Mango Smoothie -->
+        <div class="tile">
+          <img src="drinks/non/tropical-mango-pineapple-smoothie-in-2-glasses-with-straws.jpg" alt="Mango Smoothie">
+          <h3>Mango Smoothie</h3>
+          <p>GHc 25.00 <span class="info" data-tooltip="Mango, yogurt, honey, ice">ℹ</span></p>
+          <div class="order-controls" data-id="non6" data-name="Mango Smoothie" data-price="25.00" data-image="drinks/non/tropical-mango-pineapple-smoothie-in-2-glasses-with-straws.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Tropical Cocktail -->
+        <div class="tile">
+          <img src="drinks/non/mai-tai_0-477263b717c24611afb5d7963298bff2.jpg" alt="Tropical Cocktail">
+          <h3>Tropical Cocktail</h3>
+          <p>GHc 27.00 <span class="info" data-tooltip="Fruit juices, grenadine, soda">ℹ</span></p>
+          <div class="order-controls" data-id="non7" data-name="Tropical Cocktail" data-price="27.00" data-image="drinks/non/mai-tai_0-477263b717c24611afb5d7963298bff2.jpg">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+
+        <!-- Punch Rouge -->
+        <div class="tile">
+          <img src="drinks/non/Celebration-Fruit-Punch_4.webp" alt="Punch Rouge">
+          <h3>Punch Rouge</h3>
+          <p>GHc 20.00 <span class="info" data-tooltip="Mixed fruit juices, sugar, water">ℹ</span></p>
+          <div class="order-controls" data-id="non8" data-name="Punch Rouge" data-price="20.00" data-image="drinks/non/Celebration-Fruit-Punch_4.webp">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Water -->
+    <div id="water" class="tab-content">
+      <div class="container">
+        <!-- Distilled Water -->
+        <div class="tile">
+          <img src="drinks/non/Kinto-Luce-Water-Carafe-1L-3.webp" alt="Distilled Water">
+          <h3>Distilled Water</h3>
+          <p>GHc 6.00 <span class="info" data-tooltip="Purified water">ℹ</span></p>
+          <div class="order-controls" data-id="wat1" data-name="Distilled Water" data-price="6.00" data-image="drinks/non/Kinto-Luce-Water-Carafe-1L-3.webp">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+        
+        <!-- Sparkling Water -->
+        <div class="tile">
+          <img src="drinks/non/2381512.webp" alt="Sparkling Water">
+          <h3>Sparkling Water</h3>
+          <p>GHc 15.00 <span class="info" data-tooltip="Carbonated water">ℹ</span></p>
+          <div class="order-controls" data-id="wat2" data-name="Sparkling Water" data-price="15.00" data-image="drinks/non/2381512.webp">
+            <button class="add-order js-addorder">Add Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Tab -->
+  <div class="cart-tab">
+    <h1 class="foodcrt">FOOD CART</h1>
+    <div class="listcart"></div>
+    <div class="btn">
+      <button class="close">Close</button>
+      <button class="checkout">Check Out</button>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Popup -->
+  <div class="order-confirmation" id="orderConfirmation">
+    <h2>Order Confirmation</h2>
+    <div id="confirmationSummary"></div>
+    <div class="estimated-time">
+      Estimated Preparation Time: <span id="estTime">15-20 minutes</span>
+    </div>
+    <div class="countdown-container">
+      <div class="countdown-label">Your order will be ready in:</div>
+      <div class="countdown-timer" id="countdownTimer">--:--</div>
+    </div>
+    <button class="confirm-ok">OK</button>
+  </div>
+
+  <script src="welinggs.js"></script>
+</body>
+</html>

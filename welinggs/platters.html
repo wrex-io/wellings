@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platters</title>
+  <link rel="stylesheet" href="WELLINGS PROTOTYPE.css">
+  <link rel="icon" type="image/png" href="welinggs bg removed.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="head">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <label class="headtitle">PLATTERS</label>
+      </button>
+      <div class="dropdown-content">
+        <a href="drink tabs.html">DRINKS</a>
+        <a href="mainsw.html">MAINS</a>
+        <a href="welinggstarters.html">STARTERS</a>
+      </div>
+    </div>
+    <div class="chrtt">
+      <svg class="cart-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+      </svg>
+      <span>0</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Tile 1 -->
+    <div class="tile">
+      <img src="platters/akwaaba sampler.webp" alt="Akwaaba Platter">
+      <h3>Akwaaba Platter</h3>
+      <p class="foodna">GHc 565.00 <span class="info" data-tooltip="A delicious mix of Ghanaian specialties.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-1" data-name="Akwaaba Platter" data-price="565.00" data-image="platters/akwaaba sampler.webp">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 2 -->
+    <div class="tile">
+      <img src="platters/taste of tradition.webp" alt="Taste Of Tradition">
+      <h3>Taste Of Tradition</h3>
+      <p>GHc 320.00 <span class="info" data-tooltip="Traditional Ghanaian dishes.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-2" data-name="Taste Of Tradition" data-price="320.00" data-image="platters/taste of tradition.webp">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 3 -->
+    <div class="tile">
+      <img src="platters/fufu and friends.jpg" alt="Fufu And Friends">
+      <h3>Fufu And Friends</h3>
+      <p>GHc 320.00 <span class="info" data-tooltip="Fufu with assorted soups.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-3" data-name="Fufu And Friends" data-price="320.00" data-image="platters/fufu and friends.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 4 -->
+    <div class="tile">
+      <img src="platters/heritage platter.jpeg" alt="Heritage Platter">
+      <h3>Heritage Platter</h3>
+      <p>GHc 240.00 <span class="info" data-tooltip="Classic Ghanaian heritage dishes.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-4" data-name="Heritage Platter" data-price="240.00" data-image="platters/heritage platter.jpeg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 5 -->
+    <div class="tile">
+      <img src="platters/nsuomu agro.jpg" alt="Nsuomu Agro">
+      <h3>Nsuomu Agro</h3>
+      <p>GHc 300.00 <span class="info" data-tooltip="Farm-fresh Ghanaian dishes.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-5" data-name="Nsuomu Agro" data-price="300.00" data-image="platters/nsuomu agro.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 6 -->
+    <div class="tile">
+      <img src="platters/oware special.jpg" alt="Oware Special">
+      <h3>Oware Special</h3>
+      <p>GHc 220.00 <span class="info" data-tooltip="Special Ghanaian delicacies.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-6" data-name="Oware Special" data-price="220.00" data-image="platters/oware special.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+
+    <!-- Tile 7 -->
+    <div class="tile">
+      <img src="platters/the gathers.jpg" alt="The Gathers">
+      <h3>The Gathers</h3>
+      <p>GHc 350.00 <span class="info" data-tooltip="Perfect for group gatherings.">ℹ</span></p>
+      <div class="order-controls" data-id="platter-7" data-name="The Gathers" data-price="350.00" data-image="platters/the gathers.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Tab -->
+  <div class="cart-tab">
+    <h1 class="foodcrt">FOOD CART</h1>
+    <div class="listcart"></div>
+    <div class="btn">
+      <button class="close">Close</button>
+      <button class="checkout">Check Out</button>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Popup -->
+  <div class="order-confirmation" id="orderConfirmation">
+    <h2>Order Confirmation</h2>
+    <div id="confirmationSummary"></div>
+    <div class="estimated-time">
+      Estimated Preparation Time: <span id="estTime">15-20 minutes</span>
+    </div>
+    <div class="countdown-container">
+      <div class="countdown-label">Your order will be ready in:</div>
+      <div class="countdown-timer" id="countdownTimer">--:--</div>
+    </div>
+    <button class="confirm-ok">OK</button>
+  </div>
+
+  <script src="welinggs.js"></script>
+</body>
+</html>

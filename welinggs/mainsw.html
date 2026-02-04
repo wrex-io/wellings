@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welinggs</title>
+  <link rel="stylesheet" href="WELLINGS PROTOTYPE.css">
+  <link rel="website icon" type="png" href="welinggs bg removed.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="head">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <label class="headtitle">MAINS</label>
+      </button>
+      <div class="dropdown-content">
+        <a href="platters.html">PLATTERS</a>
+        <a href="drink tabs.html">DRINKS</a>
+        <a href="welinggstarters.html">STARTERS</a>
+      </div>
+    </div>
+
+    <div class="chrtt">
+      <svg class="cart-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+      </svg>
+      <span>0</span>
+    </div>
+  </div>
+  
+  <div class="container">
+    <!-- Your existing food tiles remain exactly the same -->
+    <div class="tile">
+      <img src="mains/yam chips.jpg" alt="yam chips">
+      <h3>Yam chips</h3>
+      <p class="foodna">GHc 65.00 <span class="info" data-tooltip="Description of Food 1">ℹ</span></p>
+      <div class="order-controls" data-id="main-1" data-name="Yam chips" data-price="65.00" data-image="mains/yam chips.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+   <div class="tile">
+      <img src="mains/ghana jollof.webp" alt="Ghana Jollof">
+      <h3>Ghana Jollof</h3>
+      <p>GHc 80.00 <span class="info" data-tooltip="rice,chicken(optional),onion,pepper,natural spices">ℹ</span></p>
+      <div class="order-controls" data-id="main-2" data-name="Ghana Jollof" data-price="80.00" data-image="mains/ghana jollof.webp">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/omotuo.jpg" alt="Omotuo">
+      <h3>Omotuo</h3>
+      <p>GHc 85.00 <span class="info" data-tooltip="Rice,Raw peanuts,meat,onions,tomatoes,tomato paste,garlic,ginger,hot peppers, okra (optional)">ℹ</span></p>
+      <div class="order-controls" data-id="main-3" data-name="Omotuo" data-price="85.00" data-image="mains/omotuo.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/waakye.jpg" alt="Waakye">
+      <h3>Waakye</h3>
+      <p>GHc 80.00 <span class="info" data-tooltip="Rice, black-eyed peas, water, millet leaves (optional, for color), salt, meat (e.g., goat, beef), fried plantains, spaghetti, boiled egg, avocado, salad (lettuce, tomatoes, onions), shito (Ghanaian black pepper sauce), gari (grated cassava), vegetable oil, spices (e.g., ginger, garlic, onion powder).">ℹ</span></p>
+      <div class="order-controls" data-id="main-4" data-name="Waakye" data-price="80.00" data-image="mains/waakye.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/mpotopoto.jpg" alt="Mpotopoto">
+      <h3>Mpotopoto</h3>
+      <p>GHc 75.00 <span class="info" data-tooltip="Yam, plantains, tomatoes, onions, garlic, ginger, palm oil, spinach or other leafy greens, smoked fish or dried fish, salt, pepper, water.">ℹ</span></p>
+      <div class="order-controls" data-id="main-5" data-name="Mpotopoto" data-price="75.00" data-image="mains/mpotopoto.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/kontomire.jpg" alt="Ampesi and Kontomire Stew">
+      <h3>Ampesi and Kontomire Stew</h3>
+      <p>GHc 90.00 <span class="info" data-tooltip="Cocoyam leaves,tomatoes,onions,garlic,chili peppers,palm oil,plantain.">ℹ</span></p>
+      <div class="order-controls" data-id="main-6" data-name="Ampesi and Kontomire Stew" data-price="90.00" data-image="mains/kontomire.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/gobe.jpg" alt="GOB3">
+      <h3>GOB3</h3>
+      <p>GHc 60.00 <span class="info" data-tooltip="beans,palm oil,plantain">ℹ</span></p>
+      <div class="order-controls" data-id="main-7" data-name="GOB3" data-price="60.00" data-image="mains/gobe.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/fuf.jpg" alt="Fufu">
+      <h3>Fufu</h3>
+      <p>GHc 80.00 <span class="info" data-tooltip="cassava, plantains, peanuts, tomatoes, onions, garlic, ginger, chili peppers, meat or fish (optional).">ℹ</span></p>
+      <div class="order-controls" data-id="main-8" data-name="Fufu" data-price="80.00" data-image="mains/fuf.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/yam-eto_1-1.webp" alt="3to (Yam)">
+      <h3>3to (Yam)</h3>
+      <p>GHc 70.00 <span class="info" data-tooltip="yam,peanuts,palm oil,eggs">ℹ</span></p>
+      <div class="order-controls" data-id="main-9" data-name="3to (Yam)" data-price="70.00" data-image="mains/yam-eto_1-1.webp">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/kenkey.jpg" alt="Kenkey">
+      <h3>Kenkey</h3>
+      <p>GHc 80.00 <span class="info" data-tooltip="corn dough,tilapia,egg,shrimp,turkey tail,bell pepper,shito">ℹ</span></p>
+      <div class="order-controls" data-id="main-10" data-name="Kenkey" data-price="80.00" data-image="mains/kenkey.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/bant.jpg" alt="Banku and Tilapia">
+      <h3>Banku and Tilapia</h3>
+      <p>GHc 120.00 <span class="info" data-tooltip="corn dough,cassava dough,tilapia,bell pepper,shito">ℹ</span></p>
+      <div class="order-controls" data-id="main-11" data-name="Banku and Tilapia" data-price="120.00" data-image="mains/bant.jpg">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+    </div>
+    
+    <div class="tile">
+      <img src="mains/64d258ab1719dfb496bd873f_Banku-okro-stew-removebg-preview.png" alt="Banku and Okro Stew">
+      <h3>Banku and Okro Stew</h3>
+      <p>GHc 100.00 <span class="info" data-tooltip="tomatoes, onions, bell peppers, okra, garlic, ginger, fish, palm oil, chili peppers, carrots, green leafy vegetables,corn dough,cassava dough">ℹ</span></p>
+      <div class="order-controls" data-id="main-12" data-name="Banku and Okro Stew" data-price="100.00" data-image="mains/64d258ab1719dfb496bd873f_Banku-okro-stew-removebg-preview.png">
+        <button class="add-order js-addorder">Add Order</button>
+      </div>
+  </div>
+
+  <!-- Cart Tab -->
+  <div class="cart-tab">
+    <h1 class="foodcrt">FOOD CART</h1>
+    <div class="listcart"></div>
+    <div class="btn">
+      <button class="close">Close</button>
+      <button class="checkout">Check Out</button>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Popup -->
+  <div class="order-confirmation" id="orderConfirmation">
+    <h2>Order Confirmation</h2>
+    <div id="confirmationSummary"></div>
+    <div class="estimated-time">
+      Estimated Preparation Time: <span id="estTime">15-20 minutes</span>
+    </div>
+    <!-- Add this right after the estimated time in the confirmation popup -->
+<div class="countdown-container">
+  <div class="countdown-label">Your order will be ready in:</div>
+  <div class="countdown-timer" id="countdownTimer">--:--</div>
+</div>dpo same structure 
+    <button class="confirm-ok">OK</button>
+  </div>
+
+  <script src="welinggs.js"></script>
+</body>
+</html>
