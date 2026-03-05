@@ -7,25 +7,26 @@ const app = express();
 const port = 3000;
  
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
   
 //ROUTES
 app.get("/",(req,res)=>(
-  res.sendFile(__dirname + "/welinggs/landing.html")
+  res.sendFile(__dirname + "/public/landing.html")
 ))
  app.get("/login",(req,res) =>{
-  res.sendFile(__dirname + "/welinggs/login.html") 
+  res.sendFile(__dirname + "/public/login.html") 
  })
  app.get("/welinggstarters",(req,res) =>{
-  res.sendFile(__dirname + "/welinggs/welinggstarters.html") 
+  res.sendFile(__dirname + "/public/welinggstarters.html") 
  })
  app.get("/mains",(req,res) =>{
-  res.sendFile(__dirname + "/welinggs/mainsw.html") 
+  res.sendFile(__dirname + "/public/mainsw.html") 
  })
  app.get("/platters",(req,res) =>{
-  res.sendFile(__dirname + "/welinggs/platters.html") 
+  res.sendFile(__dirname + "/public/platters.html") 
  })
  app.get("/drinks tab",(req,res) =>{
-  res.sendFile(__dirname + "/welinggs/drinks tab.html") 
+  res.sendFile(__dirname + "/public/drink tabs.html") 
  })
 
 
