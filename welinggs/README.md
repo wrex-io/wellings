@@ -1,8 +1,8 @@
 
 # Welinggs Restaurant Website
-A restaurant website for Welinggs with an interactive menu, shopping cart, and order management. Built with HTML, CSS, and JavaScript.
+A restaurant website for Welinggs with an interactive menu, shopping cart, and order management. Built with HTML, CSS, and JavaScript with Node.js/Express backend.
 
-![Welinggs](welinggs%20bg%20removed.png)
+![Welinggs](public/welinggs%20bg%20removed.png)
 
 ## Features
 
@@ -12,6 +12,7 @@ A restaurant website for Welinggs with an interactive menu, shopping cart, and o
 - Order confirmation with estimated preparation time
 - Countdown timer for order readiness
 - Responsive design
+- Server-side routing with Express.js
 
 ## Menu Categories
 
@@ -24,50 +25,59 @@ A restaurant website for Welinggs with an interactive menu, shopping cart, and o
 
 ### Prerequisites
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- A local web server (optional, for development)
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/welinggs.git
-cd welinggs
+git clone https://github.com/wrex-io/wellings.git
+cd wellings/welinggs
 ```
 
-2. Open the website:
-   - Option 1: Open `landing.html` or `welinggs home.html` in your browser
-   - Option 2: Use a local server:
-     ```bash
-     # Using Node.js (http-server)
-     npx http-server
-     
+2. Install dependencies:
+```bash
+npm install
+```
 
-3. Navigate to `http://localhost:8000` in your browser
+3. Start the server:
+```bash
+node server.js
+```
+
+4. Open your browser and navigate to `http://localhost:3000`
 
 ## Project Structure
 
 ```
 welinggs/
-├── desert/              # Starter food images
-├── mains/               # Main course images
-├── platters/            # Platter images
-├── drinks/              # Drink images (alcoholic & non)
-├── welinggstarters.html # Starters menu page
-├── mainsw.html          # Mains menu page
-├── platters.html        # Platters menu page
-├── drink tabs.html      # Drinks menu page
-├── welinggs.js          # Main JavaScript file (cart functionality)
-├── WELLINGS PROTOTYPE.css # Main stylesheet
-└── README.md            # This file
+├── public/                    # Static files served by Express
+│   ├── landing.html          # Home page
+│   ├── welinggstarters.html  # Starters menu page
+│   ├── mainsw.html           # Mains menu page
+│   ├── platters.html         # Platters menu page
+│   ├── drink tabs.html       # Drinks menu page
+│   ├── welinggs.js           # Main JavaScript file (cart functionality)
+│   ├── WELLINGS PROTOTYPE.css # Main stylesheet
+│   ├── desert/               # Starter food images
+│   ├── mains/                # Main course images
+│   ├── platters/             # Platter images
+│   ├── drinks/               # Drink images (alcoholic & non)
+│   ├── images.png            # Asset
+│   ├── welgg.png.jpeg        # Asset
+│   └── welinggs bg removed.png # Asset
+├── server.js                  # Express.js server configuration
+├── package.json              # Node.js dependencies
+└── README.md                 # This file
 ```
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (CSS variables, flexbox)
-- JavaScript (ES6+)
-- Google Fonts (Poppins & Playfair Display)
+- **Frontend**: HTML5, CSS3 (CSS variables, flexbox), JavaScript (ES6+)
+- **Backend**: Node.js, Express.js, Body Parser
+- **Fonts**: Google Fonts (Poppins & Playfair Display)
+- **Storage**: Browser localStorage for cart persistence
 
 ## Key Features
 
@@ -83,11 +93,20 @@ welinggs/
 - Countdown timer for order readiness
 - Order summary with itemized pricing
 
+## Server Routes
+
+- `GET /` - Landing page
+- `GET /welinggstarters` - Starters menu
+- `GET /mains` - Mains menu
+- `GET /platters` - Platters menu
+- `GET /drinks tab` - Drinks menu
+- `POST /login` - Login route (in development)
+
 ## Customization
 
 ### Adding New Menu Items
 
-1. Add the food image to the appropriate folder (`desert/`, `mains/`, `platters/`, or `drinks/`)
+1. Add the food image to the appropriate folder in `public/` (`desert/`, `mains/`, `platters/`, or `drinks/`)
 2. Add a new tile in the corresponding HTML file:
 ```html
 <div class="tile">
