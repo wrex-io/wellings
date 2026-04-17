@@ -1,0 +1,452 @@
+[
+  {
+    "id": "main-1",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Yam chips",
+    "price": 65,
+    "image": "mains/yam chips.jpg",
+    "description": "Description of Food 1",
+    "alt": "yam chips"
+  },
+  {
+    "id": "main-2",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Ghana Jollof",
+    "price": 80,
+    "image": "mains/ghana jollof.webp",
+    "description": "rice,chicken(optional),onion,pepper,natural spices",
+    "alt": "Ghana Jollof"
+  },
+  {
+    "id": "main-3",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Omotuo",
+    "price": 85,
+    "image": "mains/omotuo.jpg",
+    "description": "Rice,Raw peanuts,meat,onions,tomatoes,tomato paste,garlic,ginger,hot peppers, okra (optional)",
+    "alt": "Omotuo"
+  },
+  {
+    "id": "main-4",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Waakye",
+    "price": 80,
+    "image": "mains/waakye.jpg",
+    "description": "Rice, black-eyed peas, water, millet leaves, salt, meat, fried plantains, spaghetti, boiled egg, avocado, salad, shito, gari, spices",
+    "alt": "Waakye"
+  },
+  {
+    "id": "main-5",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Mpotopoto",
+    "price": 75,
+    "image": "mains/mpotopoto.jpg",
+    "description": "Yam, plantains, tomatoes, onions, garlic, ginger, palm oil, greens, smoked fish or dried fish",
+    "alt": "Mpotopoto"
+  },
+  {
+    "id": "main-6",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Ampesi and Kontomire Stew",
+    "price": 90,
+    "image": "mains/kontomire.jpg",
+    "description": "Cocoyam leaves,tomatoes,onions,garlic,chili peppers,palm oil,plantain.",
+    "alt": "Ampesi and Kontomire Stew"
+  },
+  {
+    "id": "main-7",
+    "category": "mains",
+    "subcategory": "",
+    "name": "GOB3",
+    "price": 60,
+    "image": "mains/gobe.jpg",
+    "description": "beans,palm oil,plantain",
+    "alt": "GOB3"
+  },
+  {
+    "id": "main-8",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Fufu",
+    "price": 80,
+    "image": "mains/fuf.jpg",
+    "description": "cassava, plantains, peanuts, tomatoes, onions, garlic, ginger, chili peppers, meat or fish (optional).",
+    "alt": "Fufu"
+  },
+  {
+    "id": "main-9",
+    "category": "mains",
+    "subcategory": "",
+    "name": "3to (Yam)",
+    "price": 70,
+    "image": "mains/yam-eto_1-1.webp",
+    "description": "yam,peanuts,palm oil,eggs",
+    "alt": "3to (Yam)"
+  },
+  {
+    "id": "main-10",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Kenkey",
+    "price": 80,
+    "image": "mains/kenkey.jpg",
+    "description": "corn dough,tilapia,egg,shrimp,turkey tail,bell pepper,shito",
+    "alt": "Kenkey"
+  },
+  {
+    "id": "main-11",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Banku and Tilapia",
+    "price": 120,
+    "image": "mains/bant.jpg",
+    "description": "corn dough,cassava dough,tilapia,bell pepper,shito",
+    "alt": "Banku and Tilapia"
+  },
+  {
+    "id": "main-12",
+    "category": "mains",
+    "subcategory": "",
+    "name": "Banku and Okro Stew",
+    "price": 100,
+    "image": "mains/64d258ab1719dfb496bd873f_Banku-okro-stew-removebg-preview.png",
+    "description": "tomatoes, onions, bell peppers, okra, garlic, ginger, fish, palm oil, chili peppers, carrots, greens,corn dough,cassava dough",
+    "alt": "Banku and Okro Stew"
+  },
+  {
+    "id": "starter-1",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Falafel Wrap",
+    "price": 25,
+    "image": "desert/falafel_wrap_thecozyapron_02-13-17_1.jpg",
+    "description": "Falafel, pita bread, hummus, etc.",
+    "alt": "Falafel Wrap"
+  },
+  {
+    "id": "starter-2",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Kelewele",
+    "price": 2,
+    "image": "desert/Kelewele-72.jpg",
+    "description": "Ripe plantain, ginger, etc.",
+    "alt": "Kelewele"
+  },
+  {
+    "id": "starter-3",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Samosa",
+    "price": 30,
+    "image": "desert/samosa-recipe.jpg",
+    "description": "Potatoes, peas, spices.",
+    "alt": "Samosa"
+  },
+  {
+    "id": "starter-4",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Yam Balls",
+    "price": 27,
+    "image": "desert/yam balls.jpeg",
+    "description": "Yam, egg, pepper, onion.",
+    "alt": "Yam Balls"
+  },
+  {
+    "id": "starter-5",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Kofi Brokeman",
+    "price": 15,
+    "image": "desert/kofi brokeeman.jpg",
+    "description": "Plantain, groundnuts.",
+    "alt": "Kofi Brokeman"
+  },
+  {
+    "id": "starter-6",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Bofrot",
+    "price": 20,
+    "image": "desert/bofrot.jpg",
+    "description": "Flour, sugar, yeast, vanilla.",
+    "alt": "Bofrot"
+  },
+  {
+    "id": "starter-7",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Kebab",
+    "price": 25,
+    "image": "desert/suya.jpg",
+    "description": "Beef/chicken on sticks.",
+    "alt": "Kebab"
+  },
+  {
+    "id": "starter-8",
+    "category": "starters",
+    "subcategory": "",
+    "name": "Tater Tots",
+    "price": 30,
+    "image": "desert/tater tot.jpg",
+    "description": "Potatoes, salt, pepper.",
+    "alt": "Tater Tots"
+  },
+  {
+    "id": "platter-1",
+    "category": "platters",
+    "subcategory": "",
+    "name": "Akwaaba Platter",
+    "price": 565,
+    "image": "platters/akwaaba sampler.webp",
+    "description": "A delicious mix of Ghanaian specialties.",
+    "alt": "Akwaaba Platter"
+  },
+  {
+    "id": "platter-2",
+    "category": "platters",
+    "subcategory": "",
+    "name": "Taste Of Tradition",
+    "price": 320,
+    "image": "platters/taste of tradition.webp",
+    "description": "Traditional Ghanaian dishes.",
+    "alt": "Taste Of Tradition"
+  },
+  {
+    "id": "platter-3",
+    "category": "platters",
+    "subcategory": "",
+    "name": "Fufu And Friends",
+    "price": 320,
+    "image": "platters/fufu and friends.jpg",
+    "description": "Fufu with assorted soups.",
+    "alt": "Fufu And Friends"
+  },
+  {
+    "id": "platter-4",
+    "category": "platters",
+    "subcategory": "",
+    "name": "Heritage Platter",
+    "price": 240,
+    "image": "platters/heritage platter.jpeg",
+    "description": "Classic Ghanaian heritage dishes.",
+    "alt": "Heritage Platter"
+  },
+  {
+    "id": "platter-5",
+    "category": "platters",
+    "subcategory": "",
+    "name": "Nsuomu Agro",
+    "price": 300,
+    "image": "platters/nsuomu agro.jpg",
+    "description": "Farm-fresh Ghanaian dishes.",
+    "alt": "Nsuomu Agro"
+  },
+  {
+    "id": "platter-6",
+    "category": "platters",
+    "subcategory": "",
+    "name": "Oware Special",
+    "price": 220,
+    "image": "platters/oware special.jpg",
+    "description": "Special Ghanaian delicacies.",
+    "alt": "Oware Special"
+  },
+  {
+    "id": "platter-7",
+    "category": "platters",
+    "subcategory": "",
+    "name": "The Gathers",
+    "price": 350,
+    "image": "platters/the gathers.jpg",
+    "description": "Perfect for group gatherings.",
+    "alt": "The Gathers"
+  },
+  {
+    "id": "alc1",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Blackberry Vodka",
+    "price": 32,
+    "image": "desert/drinks/alcoholic/blackberry-mint-vodka-scaled.jpg",
+    "description": "Vodka, blackberry puree, mint leaves, lime juice, simple syrup",
+    "alt": "Blackberry Vodka"
+  },
+  {
+    "id": "alc2",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Carnberry Vodka",
+    "price": 25,
+    "image": "desert/drinks/alcoholic/carnberry coktail.jpeg",
+    "description": "Vodka, cranberry juice, lime juice, simple syrup",
+    "alt": "Carnberry Vodka"
+  },
+  {
+    "id": "alc3",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Long Mint",
+    "price": 23,
+    "image": "desert/drinks/alcoholic/long mint.png",
+    "description": "Mint leaves, vodka, lime juice, simple syrup, club soda",
+    "alt": "Long Mint"
+  },
+  {
+    "id": "alc4",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Strawberry Mojito",
+    "price": 30,
+    "image": "desert/drinks/alcoholic/Cold-Strawberry-Mojito-683x1024.jpg",
+    "description": "Rum, strawberries, mint leaves, lime juice, sugar, club soda",
+    "alt": "Strawberry Mojito"
+  },
+  {
+    "id": "alc5",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Peach-Rum",
+    "price": 24,
+    "image": "desert/drinks/alcoholic/Article-Best-Cocktail-Recipes-for-Day-Drinking-Spritz-Low-ABV-Recipes.webp",
+    "description": "Rum, peach schnapps, orange juice, grenadine",
+    "alt": "Peach-Rum"
+  },
+  {
+    "id": "alc6",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Blue Ivy",
+    "price": 25,
+    "image": "desert/drinks/alcoholic/Electric-Shark-Cocktail-Recipe-4.jpg",
+    "description": "Blue Curacao, vodka, lemonade, blue raspberry syrup",
+    "alt": "Blue Ivy"
+  },
+  {
+    "id": "alc7",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Purple Rain",
+    "price": 30,
+    "image": "desert/drinks/alcoholic/Purple-rain-90edf70.jpg",
+    "description": "Vodka, blue curacao, cranberry juice, sweet and sour mix",
+    "alt": "Purple Rain"
+  },
+  {
+    "id": "alc8",
+    "category": "drinks",
+    "subcategory": "alcoholic",
+    "name": "Casa Migos Lick",
+    "price": 36,
+    "image": "desert/drinks/alcoholic/casamigas-spicy-cucumber-margarita-hero.jpg",
+    "description": "Tequila, lime juice, cucumber, jalapeno, agave syrup",
+    "alt": "Casa Migos Lick"
+  },
+  {
+    "id": "non1",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Asana",
+    "price": 15,
+    "image": "desert/drinks/non/asaana-drink-1.jpg",
+    "description": "Hibiscus, ginger, sugar, water",
+    "alt": "Asana"
+  },
+  {
+    "id": "non2",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Brukina",
+    "price": 20,
+    "image": "desert/drinks/non/brukina.jpg",
+    "description": "Corn, milk, sugar, water",
+    "alt": "Brukina"
+  },
+  {
+    "id": "non3",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Oco Milkshake",
+    "price": 23,
+    "image": "desert/drinks/non/GSnlzQoXwAAt2Bu.jpeg",
+    "description": "Oco, milk, sugar, vanilla",
+    "alt": "Oco Milkshake"
+  },
+  {
+    "id": "non4",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Passion Fruit Smoothie",
+    "price": 80,
+    "image": "desert/drinks/non/passionfruit-horchata_Square-1300x1300.webp",
+    "description": "Passion fruit, yogurt, honey, ice",
+    "alt": "Passion Fruit Smoothie"
+  },
+  {
+    "id": "non5",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Sobolo",
+    "price": 15,
+    "image": "desert/drinks/non/sobolo-pcfudien-jpg.jpeg",
+    "description": "Hibiscus leaves, ginger, sugar, water",
+    "alt": "Sobolo"
+  },
+  {
+    "id": "non6",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Mango Smoothie",
+    "price": 25,
+    "image": "desert/drinks/non/tropical-mango-pineapple-smoothie-in-2-glasses-with-straws.jpg",
+    "description": "Mango, yogurt, honey, ice",
+    "alt": "Mango Smoothie"
+  },
+  {
+    "id": "non7",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Tropical Cocktail",
+    "price": 27,
+    "image": "desert/drinks/non/mai-tai_0-477263b717c24611afb5d7963298bff2.jpg",
+    "description": "Fruit juices, grenadine, soda",
+    "alt": "Tropical Cocktail"
+  },
+  {
+    "id": "non8",
+    "category": "drinks",
+    "subcategory": "non-alcoholic",
+    "name": "Punch Rouge",
+    "price": 20,
+    "image": "desert/drinks/non/Celebration-Fruit-Punch_4.webp",
+    "description": "Mixed fruit juices, sugar, water",
+    "alt": "Punch Rouge"
+  },
+  {
+    "id": "wat1",
+    "category": "drinks",
+    "subcategory": "water",
+    "name": "Distilled Water",
+    "price": 6,
+    "image": "desert/drinks/non/Kinto-Luce-Water-Carafe-1L-3.webp",
+    "description": "Purified water",
+    "alt": "Distilled Water"
+  },
+  {
+    "id": "wat2",
+    "category": "drinks",
+    "subcategory": "water",
+    "name": "Sparkling Water",
+    "price": 15,
+    "image": "desert/drinks/non/2381512.webp",
+    "description": "Carbonated water",
+    "alt": "Sparkling Water"
+  }
+]

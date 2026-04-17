@@ -504,3 +504,141 @@ body.activeTabCart .cart-tab {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Cart Item Styles */
+.cart-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: var(--light);
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.cart-item-image {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.cart-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+.cart-item-details p {
+  margin: 3px 0;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.qty-info {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.item-total {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.cart-item-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.qty-value {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.remove-item {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.remove-item:hover {
+  background-color: #c0392b;
+}
+
+/* Product Tile Button Styles */
+.addmore-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.qty-display {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+/* Cart Total */
+.cart-total {
+  padding: 15px;
+  background-color: var(--light);
+  border-top: 2px solid var(--primary);
+  text-align: right;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin-top: 10px;
+}
