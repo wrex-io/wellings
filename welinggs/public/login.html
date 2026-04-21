@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELLINGS - Login</title>
+  <link rel="stylesheet" href="public/WELLINGS PROTOTYPE.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: var(--light);
+    }
+
+    .login-container {
+      background-color: var(--white);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--primary-dark);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid var(--primary-light);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary);
+      color: var(--dark);
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover {
+      background-color: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>WELLINGS</h1>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
