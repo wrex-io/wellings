@@ -1,0 +1,46 @@
+category_slug,name,price,description,image_path,is_available,sort_order
+starters,Falafel Wrap,25.00,"Falafel, pita bread, hummus, etc.",/desert/falafel_wrap_thecozyapron_02-13-17_1.jpg,true,1
+starters,Kelewele,2.00,"Ripe plantain, ginger, etc.",/desert/Kelewele-72.jpg,true,2
+starters,Samosa,30.00,"Potatoes, peas, spices.",/desert/samosa-recipe.jpg,true,3
+starters,Yam Balls,27.00,"Yam, egg, pepper, onion.",/desert/yam balls.jpeg,true,4
+starters,Kofi Brokeman,15.00,"Plantain, groundnuts.",/desert/kofi brokeeman.jpg,true,5
+starters,Bofrot,20.00,"Flour, sugar, yeast, vanilla.",/desert/bofrot.jpg,true,6
+starters,Kebab,25.00,"Beef or chicken on sticks.",/desert/suya.jpg,true,7
+starters,Tater Tots,30.00,"Potatoes, salt, pepper.",/desert/tater tot.jpg,true,8
+mains,Yam chips,65.00,"Description of Food 1",/mains/yam chips.jpg,true,1
+mains,Ghana Jollof,80.00,"Rice, chicken optional, onion, pepper, natural spices.",/mains/ghana jollof.webp,true,2
+mains,Omotuo,85.00,"Rice, raw peanuts, meat, onions, tomatoes, tomato paste, garlic, ginger, hot peppers, okra optional.",/mains/omotuo.jpg,true,3
+mains,Waakye,80.00,"Rice, black-eyed peas, millet leaves optional, meat, fried plantains, spaghetti, boiled egg, avocado, salad, shito, gari, spices.",/mains/waakye.jpg,true,4
+mains,Mpotopoto,75.00,"Yam, plantains, tomatoes, onions, garlic, ginger, palm oil, leafy greens, smoked or dried fish, salt, pepper.",/mains/mpotopoto.jpg,true,5
+mains,Ampesi and Kontomire Stew,90.00,"Cocoyam leaves, tomatoes, onions, garlic, chili peppers, palm oil, plantain.",/mains/kontomire.jpg,true,6
+mains,GOB3,60.00,"Beans, palm oil, plantain.",/mains/gobe.jpg,true,7
+mains,Fufu,80.00,"Cassava, plantains, peanuts, tomatoes, onions, garlic, ginger, chili peppers, meat or fish optional.",/mains/fuf.jpg,true,8
+mains,3to (Yam),70.00,"Yam, peanuts, palm oil, eggs.",/mains/yam-eto_1-1.webp,true,9
+mains,Kenkey,80.00,"Corn dough, tilapia, egg, shrimp, turkey tail, bell pepper, shito.",/mains/kenkey.jpg,true,10
+mains,Banku and Tilapia,120.00,"Corn dough, cassava dough, tilapia, bell pepper, shito.",/mains/bant.jpg,true,11
+mains,Banku and Okro Stew,100.00,"Tomatoes, onions, bell peppers, okra, garlic, ginger, fish, palm oil, chili peppers, carrots, leafy greens, corn dough, cassava dough.",/mains/64d258ab1719dfb496bd873f_Banku-okro-stew-removebg-preview.png,true,12
+platters,Akwaaba Platter,565.00,"A delicious mix of Ghanaian specialties.",/platters/akwaaba sampler.webp,true,1
+platters,Taste Of Tradition,320.00,"Traditional Ghanaian dishes.",/platters/taste of tradition.webp,true,2
+platters,Fufu And Friends,320.00,"Fufu with assorted soups.",/platters/fufu and friends.jpg,true,3
+platters,Heritage Platter,240.00,"Classic Ghanaian heritage dishes.",/platters/heritage platter.jpeg,true,4
+platters,Nsuomu Agro,300.00,"Farm-fresh Ghanaian dishes.",/platters/nsuomu agro.jpg,true,5
+platters,Oware Special,220.00,"Special Ghanaian delicacies.",/platters/oware special.jpg,true,6
+platters,The Gathers,350.00,"Perfect for group gatherings.",/platters/the gathers.jpg,true,7
+alcoholic-drinks,Blackberry Vodka,32.00,"Vodka, blackberry puree, mint leaves, lime juice, simple syrup.",/drinks/alcoholic/blackberry-mint-vodka-scaled.jpg,true,1
+alcoholic-drinks,Carnberry Vodka,25.00,"Vodka, cranberry juice, lime juice, simple syrup.",/drinks/alcoholic/carnberry coktail.jpeg,true,2
+alcoholic-drinks,Long Mint,23.00,"Mint leaves, vodka, lime juice, simple syrup, club soda.",/drinks/alcoholic/long mint.png,true,3
+alcoholic-drinks,Strawberry Mojito,30.00,"Rum, strawberries, mint leaves, lime juice, sugar, club soda.",/drinks/alcoholic/Cold-Strawberry-Mojito-683x1024.jpg,true,4
+alcoholic-drinks,Peach-Rum,24.00,"Rum, peach schnapps, orange juice, grenadine.",/drinks/alcoholic/Article-Best-Cocktail-Recipes-for-Day-Drinking-Spritz-Low-ABV-Recipes.webp,true,5
+alcoholic-drinks,Blue Ivy,25.00,"Blue Curacao, vodka, lemonade, blue raspberry syrup.",/drinks/alcoholic/Electric-Shark-Cocktail-Recipe-4.jpg,true,6
+alcoholic-drinks,Purple Rain,30.00,"Vodka, blue curacao, cranberry juice, sweet and sour mix.",/drinks/alcoholic/Purple-rain-90edf70.jpg,true,7
+alcoholic-drinks,Casa Migos Lick,36.00,"Tequila, lime juice, cucumber, jalapeno, agave syrup.",/drinks/alcoholic/casamigas-spicy-cucumber-margarita-hero.jpg,true,8
+non-alcoholic-drinks,Asana,15.00,"Hibiscus, ginger, sugar, water.",/drinks/non/asaana-drink-1.jpg,true,1
+non-alcoholic-drinks,Brukina,20.00,"Corn, milk, sugar, water.",/drinks/non/brukina.jpg,true,2
+non-alcoholic-drinks,Oco Milkshake,23.00,"Oco, milk, sugar, vanilla.",/drinks/non/GSnlzQoXwAAt2Bu.jpeg,true,3
+non-alcoholic-drinks,Passion Fruit Smoothie,80.00,"Passion fruit, yogurt, honey, ice.",/drinks/non/passionfruit-horchata_Square-1300x1300.webp,true,4
+non-alcoholic-drinks,Sobolo,15.00,"Hibiscus leaves, ginger, sugar, water.",/drinks/non/sobolo-pcfudien-jpg.jpeg,true,5
+non-alcoholic-drinks,Mango Smoothie,25.00,"Mango, yogurt, honey, ice.",/drinks/non/tropical-mango-pineapple-smoothie-in-2-glasses-with-straws.jpg,true,6
+non-alcoholic-drinks,Tropical Cocktail,27.00,"Fruit juices, grenadine, soda.",/drinks/non/mai-tai_0-477263b717c24611afb5d7963298bff2.jpg,true,7
+non-alcoholic-drinks,Punch Rouge,20.00,"Mixed fruit juices, sugar, water.",/drinks/non/Celebration-Fruit-Punch_4.webp,true,8
+water,Distilled Water,6.00,"Purified water.",/drinks/non/Kinto-Luce-Water-Carafe-1L-3.webp,true,1
+water,Sparkling Water,15.00,"Carbonated water.",/drinks/non/2381512.webp,true,2

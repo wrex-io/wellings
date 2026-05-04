@@ -57,7 +57,7 @@ welinggs/
 │   ├── welinggstarters.html  # Starters menu page
 │   ├── mainsw.html           # Mains menu page
 │   ├── platters.html         # Platters menu page
-│   ├── drink tabs.html       # Drinks menu page
+│   ├── drink-tabs.html       # Drinks menu page
 │   ├── welinggs.js           # Main JavaScript file (cart functionality)
 │   ├── WELLINGS PROTOTYPE.css # Main stylesheet
 │   ├── desert/               # Starter food images
@@ -99,7 +99,7 @@ welinggs/
 - `GET /welinggstarters` - Starters menu
 - `GET /mains` - Mains menu
 - `GET /platters` - Platters menu
-- `GET /drinks tab` - Drinks menu
+- `GET /drinks-tap` - Drinks menu
 - `POST /login` - Login route (in development)
 
 ## Customization
