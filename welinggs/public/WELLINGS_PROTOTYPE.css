@@ -644,3 +644,11 @@ body.activeTabCart .cart-tab {
   color: var(--primary-dark);
   margin-top: 10px;
 }
+
+.menu-loading {
+  grid-column: 1 / -1;
+  margin: 40px 0;
+  text-align: center;
+  color: var(--primary-dark);
+  font-weight: 600;
+}

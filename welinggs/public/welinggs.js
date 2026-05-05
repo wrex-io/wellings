@@ -279,4 +279,6 @@
 
   initTabs();
   refresh();
+
+  document.addEventListener('welinggs:menu-loaded', refresh);
 }());
