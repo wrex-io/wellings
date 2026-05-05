@@ -1,17 +1,18 @@
-
 # Welinggs Restaurant Website
-A restaurant website for Welinggs with an interactive menu, shopping cart, and order management. Built with HTML, CSS, and JavaScript with Node.js/Express backend.
+
+A restaurant website for Welinggs with dynamic menus, a shopping cart, and order confirmation. The frontend is built with HTML, CSS, and JavaScript, and the backend uses Express with a PostgreSQL database.
 
 ![Welinggs](public/welinggs%20bg%20removed.png)
 
 ## Features
 
-- Interactive menu with categories: Starters, Mains, Platters, and Drinks
+- Dynamic menu pages powered by the Express API
+- PostgreSQL-backed menu categories and items
+- Menu categories: Starters, Mains, Platters, and Drinks
 - Shopping cart with quantity management
 - Cart data persists across page navigation using localStorage
 - Order confirmation with estimated preparation time
 - Countdown timer for order readiness
-- Responsive design
 - Server-side routing with Express.js
 
 ## Menu Categories
@@ -19,119 +20,128 @@ A restaurant website for Welinggs with an interactive menu, shopping cart, and o
 - **Starters**: Falafel Wrap, Kelewele, Samosa, Yam Balls, and more
 - **Mains**: Ghana Jollof, Waakye, Fufu, Banku and Tilapia, and more
 - **Platters**: Akwaaba Platter, Taste Of Tradition, Fufu And Friends, and more
-- **Drinks**: Alcoholic and non-alcoholic beverages
+- **Drinks**: Alcoholic, non-alcoholic, and water tabs
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm (comes with Node.js)
+- Node.js
+- npm
+- PostgreSQL database with the `categories` and `menu_items` tables
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/wrex-io/wellings.git
 cd wellings/welinggs
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Start the server:
+3. Create a `.env` file in the project root:
+
+```env
+PORT=3000
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=welinggs
+MENU_TABLE=menu_items
+CORS_ORIGIN=*
+PGSSL=false
+```
+
+4. Start the server:
+
 ```bash
-node server.js
+npm start
 ```
 
-4. Open your browser and navigate to `http://localhost:3000`
+5. Open `http://localhost:3000`.
 
-## Project Structure
+## API Routes
 
-```
-welinggs/
-├── public/                    # Static files served by Express
-│   ├── landing.html          # Home page
-│   ├── welinggstarters.html  # Starters menu page
-│   ├── mainsw.html           # Mains menu page
-│   ├── platters.html         # Platters menu page
-│   ├── drink tabs.html       # Drinks menu page
-│   ├── welinggs.js           # Main JavaScript file (cart functionality)
-│   ├── WELLINGS PROTOTYPE.css # Main stylesheet
-│   ├── desert/               # Starter food images
-│   ├── mains/                # Main course images
-│   ├── platters/             # Platter images
-│   ├── drinks/               # Drink images (alcoholic & non)
-│   ├── images.png            # Asset
-│   ├── welgg.png.jpeg        # Asset
-│   └── welinggs bg removed.png # Asset
-├── server.js                  # Express.js server configuration
-├── package.json              # Node.js dependencies
-└── README.md                 # This file
-```
+- `GET /api/health` - Checks the API and database connection
+- `GET /api/menu` - Returns all available menu items
+- `GET /api/menu/:category` - Returns menu items for a category, such as `starters`
+- `GET /api/menu/:category/:tab` - Returns menu items for a tab, such as `drinks/alcoholic`
 
-## Technologies Used
-
-- **Frontend**: HTML5, CSS3 (CSS variables, flexbox), JavaScript (ES6+)
-- **Backend**: Node.js, Express.js, Body Parser
-- **Fonts**: Google Fonts (Poppins & Playfair Display)
-- **Storage**: Browser localStorage for cart persistence
-
-## Key Features
-
-### Shopping Cart System
-- Items persist across page navigation using localStorage
-- Unique item IDs prevent duplicate entries
-- Quantity management with +/- buttons
-- Real-time cart count updates
-
-### Order Management
-- Order confirmation popup
-- Estimated preparation time calculation
-- Countdown timer for order readiness
-- Order summary with itemized pricing
-
-## Server Routes
+## Page Routes
 
 - `GET /` - Landing page
+- `GET /login` - Login page
 - `GET /welinggstarters` - Starters menu
 - `GET /mains` - Mains menu
 - `GET /platters` - Platters menu
-- `GET /drinks tab` - Drinks menu
-- `POST /login` - Login route (in development)
+- `GET /drinks-tap` - Drinks menu
+- `POST /login` - Login route
 
-## Customization
+## Project Structure
 
-### Adding New Menu Items
-
-1. Add the food image to the appropriate folder in `public/` (`desert/`, `mains/`, `platters/`, or `drinks/`)
-2. Add a new tile in the corresponding HTML file:
-```html
-<div class="tile">
-  <img src="path/to/image.jpg" alt="Food Name">
-  <h3>Food Name</h3>
-  <p>GHc 25.00 <span class="info" data-tooltip="Description">ℹ</span></p>
-  <div class="order-controls" data-id="unique-id" data-name="Food Name" data-price="25.00" data-image="path/to/image.jpg">
-    <button class="add-order js-addorder">Add Order</button>
-  </div>
-</div>
+```text
+welinggs/
+|-- public/
+|   |-- landing.html
+|   |-- welinggstarters.html
+|   |-- mainsw.html
+|   |-- platters.html
+|   |-- drink tabs.html
+|   |-- menu-api.js
+|   |-- welinggs.js
+|   |-- WELLINGS_PROTOTYPE.css
+|   |-- desert/
+|   |-- mains/
+|   `-- platters/
+|-- db-schema.sql
+|-- package.json
+|-- server.js
+`-- README.md
 ```
 
-### Styling
-- Modify CSS variables in `WELLINGS PROTOTYPE.css` to change color scheme
-- Update fonts in the HTML `<head>` section
+## Database
+
+The API expects:
+
+- `categories`: stores category slugs like `starters`, `mains`, `platters`, `alcoholic-drinks`, `non-alcoholic-drinks`, and `water`
+- `menu_items`: stores menu item names, prices, descriptions, image paths, availability, and category relationships
+
+The menu pages fetch from the API and render items dynamically with `public/menu-api.js`.
+
+## Adding New Menu Items
+
+Add new items to the PostgreSQL `menu_items` table instead of editing the HTML pages. Each item should include:
+
+- `category_id`
+- `name`
+- `price`
+- `description`
+- `image_path`
+- `is_available`
+- `sort_order`
+
+Place the food image inside the appropriate folder in `public/`, then store the relative path in `image_path`.
+
+## Technologies Used
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL
+- **Environment config**: dotenv
+- **Storage**: Browser localStorage for cart persistence
 
 ## Notes
 
-- Cart data is stored in browser localStorage
-- Item IDs are prefixed by category (starter-, main-, platter-) to ensure uniqueness
-- Frontend-only (no backend integration)
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome.
+- Cart data is stored in browser localStorage.
+- Menu tiles are rendered dynamically from the API.
+- Drink page tabs map to database slugs like `alcoholic-drinks`, `non-alcoholic-drinks`, and `water`.
 
 ## License
 
@@ -140,11 +150,5 @@ This project is open source and available under the MIT License.
 ## Author
 
 Your wrx414
+
 - GitHub: @wrex-io (https://github.com/wrex-io)
-
-## Acknowledgments
-
-- Food images sourced from various culinary websites
-- Fonts provided by Google Fonts
-- Icons from Heroicons
-
