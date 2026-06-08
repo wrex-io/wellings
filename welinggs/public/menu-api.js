@@ -19,9 +19,12 @@
 
     return (
       '<div class="tile">' +
-        '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.name) + '">' +
+        '<div class="tile-img">' +
+          '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.name) + '">' +
+          '<span class="info" data-tooltip="' + description + '">i</span>' +
+        '</div>' +
         '<h3>' + escapeHtml(item.name) + '</h3>' +
-        '<p>GHc ' + price.toFixed(2) + ' <span class="info" data-tooltip="' + description + '">i</span></p>' +
+        '<p>GHc ' + price.toFixed(2) + '</p>' +
         '<div class="order-controls" data-id="' + escapeHtml(item.id) + '" data-name="' + escapeHtml(item.name) + '" data-price="' + price.toFixed(2) + '" data-image="' + escapeHtml(item.image) + '">' +
           '<button class="add-order" data-action="add" data-id="' + escapeHtml(item.id) + '">Add Order</button>' +
         '</div>' +

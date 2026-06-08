@@ -142,10 +142,17 @@ app.get('/api/menu/:category/:tab', async (req, res) => {
 
 app.get('/', simpleRoute('landing.html'));
 app.get('/login', simpleRoute('login.html'));
-app.get('/welinggstarters', simpleRoute('welinggstarters.html'));
-app.get('/mains', simpleRoute('mainsw.html'));
+app.get('/starters', simpleRoute('starters.html'));
+app.get('/mains', simpleRoute('mains.html'));
 app.get('/platters', simpleRoute('platters.html'));
-app.get('/drinks-tap', simpleRoute('drink tabs.html'));
+app.get('/drinks', simpleRoute('drinks.html'));
+
+// Backward-compatible aliases for legacy links/bookmarks.
+app.get('/welinggstarters', (req, res) => res.redirect(301, '/starters'));
+app.get('/drinks-tap', (req, res) => res.redirect(301, '/drinks'));
+app.get('/welinggstarters.html', (req, res) => res.redirect(301, '/starters'));
+app.get('/mainsw.html', (req, res) => res.redirect(301, '/mains'));
+app.get('/drink tabs.html', (req, res) => res.redirect(301, '/drinks'));
 
 app.post('/login', (req, res) => {
   const email = req.body.email;

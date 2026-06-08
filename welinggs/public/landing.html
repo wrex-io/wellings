@@ -468,9 +468,9 @@
         <span class="headtitle">HOME</span>
       </button>
       <div class="dropdown-content" role="menu">
-        <a role="menuitem" href="welinggstarters.html">STARTERS</a>
-        <a role="menuitem" href="welinggs prototype.html">MAINS</a>
-        <a role="menuitem" href="drink tabs.html">DRINKS</a>
+        <a role="menuitem" href="starters.html">STARTERS</a>
+        <a role="menuitem" href="mains.html">MAINS</a>
+        <a role="menuitem" href="drinks.html">DRINKS</a>
         <a role="menuitem" href="platters.html">PLATTERS</a>
       </div>
     </nav>
@@ -564,9 +564,9 @@
       </div>
       <div class="footer-section">
         <h3>Quick Links</h3>
-        <a href="welinggstarters.html">Starters</a>
-        <a href="welinggs prototype.html">Mains</a>
-        <a href="drink tabs.html">Drinks</a>
+        <a href="starters.html">Starters</a>
+        <a href="mains.html">Mains</a>
+        <a href="drinks.html">Drinks</a>
         <a href="platters.html">Platters</a>
       </div>
       <div class="footer-section">
@@ -575,10 +575,10 @@
         <p>Phone: +233 123 456 789</p>
         <p>Email: info@welinggs.com</p>
         <div class="social-icons">
-          <a href="#" aria-label="Facebook" title="Facebook">📘</a>
-          <a href="#" aria-label="Instagram" title="Instagram">📸</a>
-          <a href="#" aria-label="Twitter" title="Twitter">🐦</a>
-          <a href="#" aria-label="WhatsApp" title="WhatsApp">📱</a>
+          <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -603,12 +603,12 @@
       <span class="close-popup">&times;</span>
       <h2 id="menuPopupTitle">Select Menu Category</h2>
       <div class="menu-options">
-        <div class="menu-option" role="button" tabindex="0" onclick="window.location.href='welinggstarters.html'">
+        <div class="menu-option" role="button" tabindex="0" onclick="window.location.href='starters.html'">
           <i class="fas fa-utensils"></i>
           <h3>Starters</h3>
           <p>Begin your culinary journey</p>
         </div>
-        <div class="menu-option" role="button" tabindex="0" onclick="window.location.href='welinggs prototype.html'">
+        <div class="menu-option" role="button" tabindex="0" onclick="window.location.href='mains.html'">
           <i class="fas fa-drumstick-bite"></i>
           <h3>Main Courses</h3>
           <p>Our signature dishes</p>
@@ -618,7 +618,7 @@
           <h3>Platters</h3>
           <p>Perfect for sharing</p>
         </div>
-        <div class="menu-option" role="button" tabindex="0" onclick="window.location.href='drink tabs.html'">
+        <div class="menu-option" role="button" tabindex="0" onclick="window.location.href='drinks.html'">
           <i class="fas fa-glass-martini-alt"></i>
           <h3>Drinks</h3>
           <p>Refreshing beverages</p>
@@ -701,54 +701,6 @@
         });
       }
       
-      // Ensure cart persists across pages
-      const listCart = document.getElementById('listCart');
-      const cartCount = document.getElementById('cartCount');
-      
-      if (listCart && cartCount) {
-        let cart = [];
-        
-        window.addEventListener('load', function() {
-          const savedCart = localStorage.getItem('welinggsCart');
-          if (savedCart) {
-            cart = JSON.parse(savedCart);
-            updateCartUI();
-          }
-        });
-        
-        // Save cart to localStorage when updated
-        function updateCartUI() {
-          // Original updateCartUI functionality
-          listCart.innerHTML = '';
-          let totalItems = 0;
-
-          cart.forEach(item => {
-            const cartItem = document.createElement('div');
-            cartItem.classList.add('cart-item');
-            cartItem.innerHTML = `
-              <div class="cart-item-image">
-                <img src="${item.image}" alt="${item.name}">
-              </div>
-              <div class="cart-item-details">
-                <h3>${item.name}</h3>
-                <p>GHc ${item.price.toFixed(2)}</p>
-              </div>
-              <div class="cart-item-quantity">
-                <button class="quantity-btn minus" data-id="${item.id}">-1</button>
-                <span>${item.quantity}</span>
-                <button class="quantity-btn plus" data-id="${item.id}">+1</button>
-              </div>
-            `;
-            listCart.appendChild(cartItem);
-            totalItems += item.quantity;
-          });
-
-          cartCount.textContent = totalItems;
-          
-          // Save to localStorage
-          localStorage.setItem('welinggsCart', JSON.stringify(cart));
-        }
-      }
     });
   </script>
 </body>

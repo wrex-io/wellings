@@ -78,10 +78,10 @@ npm start
 
 - `GET /` - Landing page
 - `GET /login` - Login page
-- `GET /welinggstarters` - Starters menu
+- `GET /starters` - Starters menu
 - `GET /mains` - Mains menu
 - `GET /platters` - Platters menu
-- `GET /drinks-tap` - Drinks menu
+- `GET /drinks` - Drinks menu
 - `POST /login` - Login route
 
 ## Project Structure
@@ -90,10 +90,10 @@ npm start
 welinggs/
 |-- public/
 |   |-- landing.html
-|   |-- welinggstarters.html
-|   |-- mainsw.html
+|   |-- starters.html
+|   |-- mains.html
 |   |-- platters.html
-|   |-- drink tabs.html
+|   |-- drinks.html
 |   |-- menu-api.js
 |   |-- welinggs.js
 |   |-- WELLINGS_PROTOTYPE.css

@@ -215,6 +215,12 @@
     var action = el.dataset.action;
     var id = el.dataset.id;
 
+    if (el.classList.contains('info') || el.closest('.info')) {
+      var info = el.classList.contains('info') ? el : el.closest('.info');
+      info.classList.toggle('info--pinned');
+      return;
+    }
+
     if (action === 'add') {
       var controls = el.closest('.order-controls');
       if (!controls) return;
@@ -280,5 +286,48 @@
   initTabs();
   refresh();
 
-  document.addEventListener('welinggs:menu-loaded', refresh);
+  document.body.addEventListener('mouseleave', function (event) {
+    if (event.target.classList.contains('info')) {
+      event.target.classList.remove('info--pinned');
+    }
+  }, true);
+
+  document.addEventListener('welinggs:menu-loaded', function () {
+    refresh();
+    initLiquidGlass();
+  });
+
+  /* ---- Liquid Glass mouse tracking ---- */
+  function initLiquidGlass() {
+    var container = document.querySelector('.container');
+    if (!container) return;
+
+    container.addEventListener('mousemove', function (e) {
+      document.querySelectorAll('.tile').forEach(function (tile) {
+        var rect = tile.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        if (x < 0 || x > rect.width || y < 0 || y > rect.height) return;
+        var px = (x / rect.width) * 100;
+        var py = (y / rect.height) * 100;
+        tile.style.setProperty('--mouse-x', px + '%');
+        tile.style.setProperty('--mouse-y', py + '%');
+        var tx = ((x / rect.width) - 0.5) * 6;
+        var ty = ((y / rect.height) - 0.5) * -6;
+        tile.style.setProperty('--tilt-x', tx + 'deg');
+        tile.style.setProperty('--tilt-y', ty + 'deg');
+      });
+    });
+
+    container.addEventListener('mouseleave', function () {
+      document.querySelectorAll('.tile').forEach(function (tile) {
+        tile.style.setProperty('--mouse-x', '50%');
+        tile.style.setProperty('--mouse-y', '50%');
+        tile.style.setProperty('--tilt-x', '0deg');
+        tile.style.setProperty('--tilt-y', '0deg');
+      });
+    });
+  }
+
+  initLiquidGlass();
 }());
